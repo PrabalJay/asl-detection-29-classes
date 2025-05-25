@@ -155,20 +155,23 @@ python detect.py --webcam
 ```
 asl-detection-29-classes/
 ├── data/
-│   ├── train/         # Training images
-│   └── test/          # Test images
+│   ├── train/              # Training images
+│   └── test/               # Test images
+├── docs/                   # GitHub Pages folder
+│   ├── index.html          # Your HTML file
+│   ├── asl_demo.mp4        # Video (compressed)
+│   ├── sample_1.png        # Demo images
+│   ├── sample_2.png
+│   └── sample_3.png
 ├── models/
-│   └── model.keras    # Trained model
-├── check_images.py    # Dataset verification utility
-├── config.py          # Configuration script
-├── detect.py          # Real-time/image detection script
-├── evaluate.py        # Model evaluation script
-├── train.py           # Model training script
-├── requirements.txt   # Python dependencies
-├── confusion_matrix.png # Model performance visualization
-├── media/
-│   └── demos/
-│       ├── asl_demo.mp4
+│   └── model.keras         # Trained model
+├── check_images.py         # Dataset verification utility
+├── config.py               # Configuration script
+├── detect.py               # Real-time/image detection script
+├── evaluate.py             # Model evaluation script
+├── train.py                # Model training script
+├── requirements.txt        # Python dependencies
+├── confusion_matrix.png    # Model performance visualization
 └── README.md
 ```
 
@@ -240,14 +243,8 @@ Special thanks to the open-source community and contributors for their resources
 
 ## 🟢 Live Demo  
 
-```html
-<div align="center">
-  <video width="80%" controls>
-    <source src="media/demos/asl_demo.mp4" type="video/mp4">
-  </video>
-  <p><em>Real-time ASL alphabet detection - Prabal Jay</em></p>
-</div>
-```
+[**Try it here**](https://PrabalJay.github.io/asl-detection-29-classes)
+
 **Features Demonstrated**:
 - ✅ Webcam hand tracking
 - ✅ 29-class prediction (A-Z + SPACE/DELETE/NOTHING)
