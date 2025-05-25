@@ -243,7 +243,7 @@ Special thanks to the open-source community and contributors for their resources
 ```html
 <div align="center">
   <video width="80%" controls>
-    <source src="media\demos\asl_demo.mp4" type="video/mp4">
+    <source src="media/demos/asl_demo.mp4" type="video/mp4">
   </video>
   <p><em>Real-time ASL alphabet detection - Prabal Jay</em></p>
 </div>
