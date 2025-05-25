@@ -1,45 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ASL Detection (29 Classes)</title>
+  <title>🖐️ ASL Detection System (29 Classes)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Real-time American Sign Language (ASL) detection for 29 classes using deep learning.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-    video, img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .demo-container { margin: 30px 0; }
-    code { background: #f5f5f5; padding: 2px 5px; border-radius: 3px; }
+    :root {
+      --primary: #4f8cff;
+      --accent: #ffb347;
+      --bg: #f7faff;
+      --text: #233252;
+      --card: #fff;
+      --shadow: 0 4px 20px rgba(79, 140, 255, 0.08);
+    }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 870px;
+      margin: 40px auto 30px auto;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 32px 28px 24px 28px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.6rem;
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 28px;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    .demo-container {
+      margin: 38px 0 30px 0;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.35rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    video, img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 14px rgba(79,140,255,0.05);
+      margin-bottom: 12px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sample-grid {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    .sample-grid img {
+      flex: 1 1 180px;
+      max-width: 180px;
+      min-width: 100px;
+      height: auto;
+    }
+    code, pre {
+      background: #f2f6ff;
+      color: #0e1c36;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      box-shadow: 0 0.5px 1.5px rgba(79,140,255,0.06);
+    }
+    pre {
+      margin-top: 8px;
+      margin-bottom: 0;
+      overflow-x: auto;
+    }
+    .github-btn {
+      display: inline-block;
+      margin-bottom: 12px;
+      margin-top: 4px;
+    }
+    .github-btn img {
+      vertical-align: middle;
+      height: 30px;
+    }
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 32px;
+      justify-content: center;
+      margin: 26px 0 8px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .features-list li {
+      flex: 1 1 210px;
+      background: #f6faff;
+      border-left: 4px solid var(--accent);
+      border-radius: 7px;
+      padding: 13px 16px 11px 17px;
+      font-size: 1.05rem;
+      margin: 0;
+      box-shadow: 0 1px 6px rgba(34,142,255,0.04);
+      min-width: 175px;
+    }
+    .footer {
+      text-align: center;
+      color: #95a3c8;
+      font-size: 1rem;
+      margin-top: 25px;
+      margin-bottom: 7px;
+    }
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .badge-row img {
+      height: 27px;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 12px 4vw 8px 4vw;
+      }
+      .sample-grid {
+        gap: 6px;
+      }
+      .features-list {
+        gap: 11px;
+      }
+      .features-list li {
+        padding: 10px 7px 8px 9px;
+        font-size: 0.98rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>ASL Detection System</h1>
-  <p>Real-time American Sign Language recognition for 29 classes (A-Z + space/del/nothing).</p>
-  
-  <div class="demo-container">
-    <h2>Demo Video</h2>
-    <video controls>
-      <source src="asl_demo.mp4" type="video/mp4">
-      Your browser doesn't support HTML5 video. 
-      <a href="asl_demo.mp4">Download instead</a>
-    </video>
-    <p><em>Real-time detection by Prabal Jay | Unified Mentor</em></p>
-  </div>
+  <div class="container">
+    <h1>🖐️ ASL Detection System</h1>
+    <div class="subtitle">Real-time American Sign Language recognition for 29 classes (A-Z + SPACE, DEL, NOTHING)<br>
+      <span style="font-size:1.1rem;color:#ffb347;">Deep Learning · Computer Vision · Accessible AI</span>
+    </div>
 
-  <div class="demo-container">
-    <h2>Sample Results</h2>
-    <img src="sample_1.png" alt="ASL 'A' detection">
-    <img src="sample_2.png" alt="ASL 'Y' detection">
-    <img src="sample_3.png" alt="ASL 'P' detection">
-  </div>
+    <div class="badge-row">
+      <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
+      <img src="https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow" alt="TensorFlow">
+      <img src="https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv" alt="OpenCV">
+      <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
+      <a href="https://github.com/PrabalJay/asl-detection-29-classes" target="_blank" class="github-btn">
+        <img src="https://img.shields.io/badge/View_on_GitHub-181717?logo=github" alt="GitHub">
+      </a>
+    </div>
 
-  <div class="demo-container">
-    <h2>Get Started</h2>
-    <a href="https://github.com/PrabalJay/asl-detection-29-classes" target="_blank">
-      <img src="https://img.shields.io/badge/View_on_GitHub-181717?logo=github" alt="GitHub">
-    </a>
-    <pre><code>git clone https://github.com/PrabalJay/asl-detection-29-classes.git
-cd asl-detection-29-classes
-pip install -r requirements.txt
-python detect.py</code></pre>
+    <ul class="features-list">
+      <li>🔤 <b>29-class ASL recognition:</b> Detects all alphabets (A-Z), plus SPACE, DEL, and NOTHING.</li>
+      <li>🎥 <b>Real-time webcam &amp; image input:</b> Use your webcam or upload images for instant results.</li>
+      <li>💯 <b>High accuracy:</b> Deep learning model trained on robust ASL datasets.</li>
+      <li>🖼️ <b>Visualization:</b> Confusion matrix and sample predictions included.</li>
+      <li>🛠️ <b>Open source &amp; easy setup:</b> Simple installation and usage instructions.</li>
+    </ul>
+
+    <div class="demo-container">
+      <h2>Demo Video</h2>
+      <video controls poster="sample_2.png">
+        <source src="asl_demo.mp4" type="video/mp4">
+        Your browser doesn't support HTML5 video.
+        <a href="asl_demo.mp4">Download instead</a>
+      </video>
+      <p style="text-align:center;"><em>Real-time ASL detection | Prabal Jay</em></p>
+    </div>
+
+    <div class="demo-container">
+      <h2>Sample Results</h2>
+      <div class="sample-grid">
+        <img src="sample_1.png" alt="ASL 'A' detection">
+        <img src="sample_2.png" alt="ASL 'Y' detection">
+        <img src="sample_3.png" alt="ASL 'P' detection">
+      </div>
+    </div>
+
+    <div class="demo-container">
+      <h2>Try Live Demo</h2>
+      <p>
+        <a href="https://PrabalJay.github.io/asl-detection-29-classes" target="_blank" style="color:var(--primary);font-weight:600;">
+          👉 Launch Web Demo
+        </a>
+      </p>
+    </div>
+
+    <div class="demo-container">
+      <h2>Get Started in 1 Minute</h2>
+      <pre><code>git clone https://github.com/PrabalJay/asl-detection-29-classes.git</code></pre>
+      <pre><code>asl-detection-29-classes</code></pre>
+      <pre><code>pip install -r requirements.txt</code></pre>
+      <pre><code>python detect.py</code></pre>
+    </div>
+
+    <div class="demo-container">
+      <h2>About the Project</h2>
+      <p>
+        <b>ASL Detection System</b> is an open-source deep learning project to recognize American Sign Language gestures from images and live webcam. 
+        Built with <b>TensorFlow</b> and <b>OpenCV</b>, the model supports 29 classes and is trained on the <a href="https://www.kaggle.com/datasets/grassknoted/asl-alphabet" target="_blank">ASL Alphabet Dataset</a>.
+      </p>
+      <ul>
+        <li>📈 <b>100% test accuracy</b> on the included dataset</li>
+        <li>📂 Well-structured, readable codebase</li>
+        <li>🤝 <a href="https://github.com/PrabalJay/asl-detection-29-classes/issues" target="_blank">Contributions and feedback welcome!</a></li>
+      </ul>
+    </div>
+
+    <div class="demo-container">
+      <h2>Links & Resources</h2>
+      <ul>
+        <li><a href="https://github.com/PrabalJay/asl-detection-29-classes" target="_blank">GitHub Source Code</a></li>
+        <li><a href="https://PrabalJay.github.io/asl-detection-29-classes" target="_blank">Live Web Demo</a></li>
+        <li><a href="https://www.kaggle.com/datasets/grassknoted/asl-alphabet" target="_blank">ASL Alphabet Dataset (Kaggle)</a></li>
+        <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a>, <a href="https://opencv.org/" target="_blank">OpenCV</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Prabal Jay · MIT License · <a style="color:inherit;" href="https://github.com/PrabalJay/asl-detection-29-classes/issues">Contact</a>
+    </div>
   </div>
 </body>
 </html>

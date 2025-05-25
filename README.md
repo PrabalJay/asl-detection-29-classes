@@ -146,6 +146,7 @@ python detect.py --webcam
 ```
 
 <img src="sample_2.png" alt="Webcam Demo" width="300"/>
+<img src="sample_3.png" alt="Webcam Demo" width="300"/>
 </details>
 
 ---
