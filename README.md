@@ -15,7 +15,7 @@
 
 ## 🚀 Overview
 
-**ASL Detection System** is a robust, easy-to-use tool for recognizing all 26 ASL alphabets plus SPACE, DEL, and NOTHING gestures. Featuring real-time detection, high accuracy, and a user-friendly interface, it's perfect for education, accessibility, and research.
+**ASL Detection System** is a robust, easy-to-use tool for recognizing all 26 ASL alphabets plus SPACE, DEL, and NOTHING gestures. Featuring real-time detection, high accuracy, and a user-friendly interface.
 
 ---
 
@@ -23,8 +23,8 @@
 
 1. [Features](#-features)
 2. [Demo](#-demo)
-3. [Installation](https://github.com/PrabalJay/asl-detection-29-classes/edit/main/README.md#%EF%B8%8F-installation)
-4. [Requirements](https://github.com/PrabalJay/asl-detection-29-classes/edit/main/README.md#%EF%B8%8F-requirements)
+3. [Installation](#️-installation)
+4. [Requirements](#️-requirements)
 5. [Quick Start](#-quick-start)
 6. [Usage](#-usage)
 7. [Project Structure](#-project-structure)
@@ -35,7 +35,7 @@
 12. [Acknowledgements](#-acknowledgements)
 13. [Live Demo](#-live-demo)
 14. [License](#-license)
-15. [Troubleshooting](https://github.com/PrabalJay/asl-detection-29-classes/edit/main/README.md#%EF%B8%8F-troubleshooting)
+15. [Troubleshooting](#-troubleshooting)
 16. [Credits](#-credits)
 17. [Contact / Support](#-contact--support)
 
@@ -266,6 +266,6 @@ Built with TensorFlow/Keras
 
 ## 📬 Contact / Support
 
-For questions, open an [issue](https://github.com/PrabalJay/asl-detection-29-classes/issues) or contact [PrabalJay](2k23.cs2313758@gmail.com).
+For questions, open an [issue](https://github.com/PrabalJay/asl-detection-29-classes/issues) or contact [PrabalJay](mailto:2k23.cs2313758@gmail.com).
 
 ---
