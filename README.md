@@ -35,7 +35,7 @@
 12. [Acknowledgements](#-acknowledgements)
 13. [Live Demo](#-live-demo)
 14. [License](#-license)
-15. [Troubleshooting](#-troubleshooting)
+15. [Troubleshooting](https://github.com/PrabalJay/asl-detection-29-classes/edit/main/README.md#%EF%B8%8F-troubleshooting)
 16. [Credits](#-credits)
 17. [Contact / Support](#-contact--support)
 
@@ -130,7 +130,6 @@ python detect.py
   `python config.py`  
   _Adjusts configuration settings for training and detection_
 
-<details>
 <summary>Examples</summary>
 
 **Detect ASL in an Image**
