@@ -35,7 +35,7 @@
 12. [Acknowledgements](#-acknowledgements)
 13. [Live Demo](#-live-demo)
 14. [License](#-license)
-15. [Troubleshooting](https://github.com/PrabalJay/asl-detection-29-classes/edit/main/README.md#%EF%B8%8F-troubleshooting)
+15. [Troubleshooting](#️-troubleshooting)
 16. [Credits](#-credits)
 17. [Contact / Support](#-contact--support)
 
