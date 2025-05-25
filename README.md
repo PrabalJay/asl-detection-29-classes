@@ -265,6 +265,6 @@ Built with TensorFlow/Keras
 
 ## 📬 Contact / Support
 
-For questions, open an [issue](https://github.com/PrabalJay/asl-detection-29-classes/issues) or contact [PrabalJay](mailto:2k23.cs2313758@gmail.com).
+For questions, open an [issue](https://github.com/PrabalJay/asl-detection-29-classes/issues).
 
 ---
