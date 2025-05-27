@@ -23,8 +23,8 @@
 
 1. [Features](#-features)
 2. [Demo](#-demo)
-3. [Installation](#️-installation)
-4. [Requirements](#️-requirements)
+3. [Installation](#-installation)
+4. [Requirements](#-requirements)
 5. [Quick Start](#-quick-start)
 6. [Usage](#-usage)
 7. [Project Structure](#-project-structure)
@@ -35,7 +35,7 @@
 12. [Acknowledgements](#-acknowledgements)
 13. [Live Demo](#-live-demo)
 14. [License](#-license)
-15. [Troubleshooting](#️-troubleshooting)
+15. [Troubleshooting](#-troubleshooting)
 16. [Credits](#-credits)
 17. [Contact / Support](#-contact--support)
 
