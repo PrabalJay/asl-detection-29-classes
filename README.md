@@ -23,7 +23,7 @@
 
 1. [Features](#-features)
 2. [Demo](#-demo)
-3. [Installation](#installation)
+3. [Installation](#-installation)
 4. [Requirements](#-requirements)
 5. [Quick Start](#-quick-start)
 6. [Usage](#-usage)
